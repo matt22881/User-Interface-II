@@ -67,6 +67,7 @@ textarea {
     }
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 }
 
@@ -75,3 +76,21 @@ textarea {
     font-family: 'VT323', monospace;
     line-height: 1.25;
 }
+
+.header {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2ems;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    }
+
+    h1 {
+        width: 100%;
+        text-align: center;
+        margin-top; 2.5%;
+    }
+
+    nav {
+        display: flex;
+
+    }
