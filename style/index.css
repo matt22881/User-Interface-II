@@ -1,14 +1,163 @@
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}*{border:1pt solid #000}
 
 
+
+/* Myers's reset to zero css */
+
+
+
+/* Now some general styles of my own */
+
+
+* {border: dotted 30px purple;}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap');
+
 html {
     font-size= 62.5%;
-    border: 1px solid black;
+    border: 1px || solid || red;
+    }
+
+body {
+    font-size:1rem;
+    background-color: #297052;
+    
 }
+
+header {
+    font-size: 125%;
+    font-family: 'Fruktur', cursive;
+}
+
+h1 {
+    font-size: 200%;
+    font-family: 'Fruktur', cursive;}
+h2 {
+    font-size: 175%;
+    font-family: 'Press Start 2P', cursive;
+}
+h3 {
+    font-size: 150%;
+    font-family: 'Press Start 2P', cursive;
+}
+h4 {
+    font-size: 130%;
+    font-family: 'Press Start 2P', cursive;
+}
+h5 {
+    font-size: 120%;
+    font-family: 'Press Start 2P', cursive;
+}
+h6 {
+    font-size: 110%;
+    font-family: 'Press Start 2P', cursive;
+}
+
 body {
     
-    font-size:1rem;
+  line-height: 1.5;
+  font-family: 'Schoolbell', cursive;
 }
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #152525;
+    padding: 1rem
+}
+nav a {
+    color: #a8c7b5;
+    text-decoration: none;
+    border: 2px #a8c7b5 solid;
+    padding: 1rem
+}
+
+
+/* Page specific styles now */
+
+/* Styling for index.html */
+
+#projects-header {
+    max-width: 50%;
+    margin: 1rem;
+}
+#intro {
+    text-align: center
+}
+
+.showoff img {  
+    /* max-width: 5%; */
+    margin: 2rem;
+    background-color: red; 
+}
+#impressive {
+    display: flex;    
+}
+
+#impressive img {
+        flex-direction: column;
+        margin: auto 0;
+}
+
+#impressive .jibber-jabber {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    line-height: 2.5;
+    max-width: 12.5%;
+    margin: 0px 40px 0px 40px;
+}
+
+    
+
+.current-project {
+    max-width: 90%;
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+.image-container img {
+    /* display: flex; */
+    /* flex-direction: row; */
+}
+#current-project-pic {
+    /* display: flex; */
+    /* flex-direction: row; */
+}
+.current-project-jibber-jabber {
+    max-width: 40%;
+    /* display: flex; */
+    /* flex-direction: row; */
+}
+#project-subtitle {
+    /* display:flex; */
+    /* flex-direction: row-reverse */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Fancy footer goes at the bottom */
 
 footer {
     display:flex;
@@ -39,7 +188,7 @@ footer p {
     height: 40px;
     border: none;
     outline: none;
-    color: #fff;
+    color: #297052;
     background: #111;
     cursor: pointer;
     position: relative;
@@ -92,4 +241,5 @@ footer p {
     0% { background-position: 0 0; }
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
-} */
+}
+
