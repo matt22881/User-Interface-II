@@ -3,32 +3,27 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Matt's Page'</title>
+    <title>Matt's Projects</title>
+    <link rel="stylesheet" href="./style/index.css"> 
   </head>
 
   <body>
     <header>
-      <nav>
-        <ul>
-          <li>Matt's' menu</li>
-        </ul>
-      </nav>
+      <h1>Matthew Emrich's Projects</h1>
+        <nav>
+          <a href='./index.html' id='home'>Home</a>
+          <a href='./about.html' id='about'>About</a>
+          <!-- <a href= 'mailto:matt@dontemailme.com' id='contact'>Contact</a> -->
+          <a href= './projects.html' id='projects'>Projects</a>
+        </nav>
     </header>
 
     <section>
-      <article>
+      
         <header>
-          <h2>Matt's Article</h2>
-          <p>
-            Posted on
-            <time
-              datetime="YYYY-MM-DDTHH:MM:SS
-				+of:st"
-              >Month Nth YYYY</time
-            >
-            by <a href="#">Writer</a> - <a href="#comments">69 comments</a>
-          </p>
+          <h2>Matt's Current Project</h2>
         </header>
+        <img src='./images/current.jpg'>
         <p>
           Lorem ipsum dolizzle sizzle amizzle, dizzle adipiscing elit. Nullizzle
           shut the shizzle up things, bizzle volutpat, suscipizzle quis, yo
@@ -36,37 +31,32 @@
           shizzle shiz. Check out this gizzle dolizzle dapibus break it down
           tempizzle yippiyo..
         </p>
-      </article>
+      
 
-      <article>
+      
         <header>
-          <h2>Matt's Other Article</h2>
-          <p>
-            Posted on
-            <time
-              datetime="YYYY-MM-DDTHH:MM:SS
-				+of:st"
-              >Month Nth YYYY</time
-            >
-            by <a href="#">Writer</a> - <a href="#comments">42 comments</a>
-          </p>
-        </header>
-        <p>
-          Maurizzle pellentesque dawg izzle turpizzle. Vestibulum in tortor.
-          Pellentesque shizznit yo shizznit. Dope pizzle mah nizzle platea
-          dictumst. Donec dapibus. Curabitur its fo rizzle urna, pizzle fizzle,
-          fo shizzle izzle, eleifend bizzle, nunc.
-        </p>
-      </article>
+          <h3>Matt's Other Projects</h3></header>
+          <div class= 'projects'>
+            <img src='https://picsum.photos/200/200'>
+            <img src='https://picsum.photos/200/200'>
+            <img src='https://picsum.photos/200/200'>
+            <img src='https://picsum.photos/200/200'>
+            <img src='https://picsum.photos/200/200'>
+            <img src='https://picsum.photos/200/200'>
+            </div>
+          
+        
+      
     </section>
 
     <aside>
-      <h2>About section</h2>
+      <h3>Afterthought</h3>
       <p>The bizzle suscipizzle. Integer sempizzle velizzle sizzle crazy.</p>
     </aside>
 
     <footer>
-      <p>Copyright 2009 Your Mama</p>
+      <div id='mailbutton'><p><button class='button' onclick="window.location.href='mailto:matt@dontemailme.com'">I ♥ E-Mail!</button></div></p>
+      <div id='footertext'><p>"I Really DON'T"  --Matt.</p></div>
     </footer>
   </body>
 </html>
