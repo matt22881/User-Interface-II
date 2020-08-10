@@ -1,7 +1,7 @@
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
     margin: 0;
     padding: 0;
-    border: 0;
+    /* border: 0; */
     font-size: 100%;
     font: inherit;
     vertical-align: baseline
@@ -34,7 +34,7 @@ table {
 }
 
 * {
-    border: 1pt solid #000
+    border: 1pt solid red
 }
 
 /* Myers's reset to zero css */
@@ -44,13 +44,13 @@ table {
 @import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap');
+
 html {
-    font-size=62.5%;
-    border: 1px || solid || red;
+    font-size: 62.5%;
 }
 
 body {
-    font-size: 1rem;
+    font-size: 1.4rem;
     background-color: #297052;
 }
 
@@ -94,139 +94,29 @@ body {
     font-family: 'Schoolbell', cursive;
 }
 
-nav {
+a:link {
+    color:violet
+}
+
+a:visited {
+    color: darkviolet
+}
+    nav {
     display: flex;
     justify-content: space-evenly;
-    background-color: #152525;
-    padding: 1rem
+    background: #152525;
+    padding: .3rem; 
 }
 
 nav a {
     color: #a8c7b5;
     text-decoration: none;
-    border: 2px #a8c7b5 solid;
-    padding: 1rem
+    border: .2rem #a8c7b5 solid;
+    padding:.1rem;
+    
 }
 
 /* Page specific styles now */
-
-/* Styling for index.html */
-
-.intro {
-    text-align: center
-}
-
-.main-image img {
-    width: 100%;
-}
-
-#impressive {
-    display: flex;
-}
-
-#impressive img {
-    flex-direction: column;
-    width: 100%;
-}
-
-#impressive a {
-    margin: .2rem;
-}
-
-#impressive .jibber-jabber {
-    display: flex;
-    padding: 20px;
-    text-align: justify;
-    align-items: center;
-    line-height: 2.5;
-    max-width: 12.5%;
-    margin: 0px 25px;
-}
-
-/* styling for projects.html */
-
-#projects-header {
-    max-width: 50%;
-    margin: 1rem;
-}
-
-.current-project {
-    display: flex;
-    padding: 0 1rem;
-}
-
-.current-project img {
-    width: 100%
-}
-
-.image-container {
-    display: flex;
-}
-
-#current-project-pic {
-    margin: 0px 60px 0px 0px;
-}
-
-.current-project-jibber-jabber {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.current-project-jibber-jabber p {
-    align-items: center;
-    justify-content: center;
-    text-align: justify;
-    line-height: 2;
-}
-
-#project-subtitle h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.projects {
-    display: flex;
-}
-
-.projects img {
-    margin 5px;
-    width: 25%
-}
-
-.other-projects .projects img {
-    margin: 2px;
-}
-
-.other-projects img {}
-
-/* styling for contact.html */
-
-.about-head {
-    display: flex;
-    justify-content: space-between;
-}
-
-.main img {
-    max-width: 100%;
-}
-
-.main header {
-    position: absolute;
-    z-index: 2;
-    left: 25%;
-    top: 15%;
-}
-
-.main p {
-    width: 50%
-}
-
-.other-contacts img {
-    width: 30%;
-}
 
 /* styling for about.html */
 
@@ -280,6 +170,124 @@ nav a {
 #old-comments p {
     margin: 1rem
 }
+
+/* styling for contact.html */
+
+.about-head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main img {
+    max-width: 100%;
+}
+
+.main header {
+    position: absolute;
+    z-index: 2;
+    left: 25%;
+    top: 15%;
+}
+
+.main p {
+    width: 50%
+}
+
+.other-contacts img {
+    width: 30%;
+}
+/* Styling for index.html */
+
+.intro {
+    text-align: center
+}
+
+.main-image img {
+    width: 100%;
+}
+
+#impressive {
+    display: flex;
+}
+
+#impressive img {
+    flex-direction: column;
+    width: 100%;
+}
+
+#impressive a {
+    margin: .2rem;
+}
+
+#impressive .jibber-jabber {
+    display: flex;
+    padding: 20px;
+    text-align: justify;
+    align-items: center;
+    line-height: 2.5;
+    max-width: 12.5%;
+    margin: 0px 25px;
+}
+
+/* styling for projects.html */
+
+.projects-body {
+    margin:1rem;
+}
+
+.projects-page-header {    
+    width: 50%;
+}
+
+#projects-navbar  {
+    /* Why did i have to do that??? */
+    background:#152525;
+    /* this should have been styled with the rest of the navs */
+    /* the other pages it was colored!!! */
+    }
+
+
+    #projects-navbar {
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    width: 85%;
+    margin: auto;
+}
+
+#projects-navbar a {
+    width:25%;
+    text-align: center;
+}
+
+.current-project {
+    display: flex;
+}
+
+.image-container {
+    /* width: 100% */
+}
+
+#current-project-pic img {
+    width: 100%
+}
+
+.current-project-jibber-jabber {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 65%;
+}
+
+.other-projects h3 {
+    text-align: center;
+}
+.other-projects img {
+    margin: 1rem;
+    width: 22%;
+}
+
 
 /* Fancy footer goes at the bottom */
 
