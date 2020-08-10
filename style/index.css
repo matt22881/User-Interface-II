@@ -265,7 +265,7 @@ nav a {
 }
 
 .image-container {
-    /* width: 100% */
+    width: 100%
 }
 
 #current-project-pic img {
@@ -284,8 +284,16 @@ nav a {
     text-align: center;
 }
 .other-projects img {
-    margin: 1rem;
-    width: 22%;
+    margin: .5rem;
+    width: 21%;
+}
+.projects-container {
+    display: flex;
+    flex-direction: column;
+}
+.projects-container div {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 
@@ -315,8 +323,8 @@ footer p {
 }
 
 .glow-on-hover {
-    width: 220px;
-    height: 40px;
+    width: 15%;
+    height: 2%;
     border: none;
     outline: none;
     color: #297052;
@@ -378,4 +386,20 @@ footer p {
     100% {
         background-position: 0 0;
     }
+}
+
+
+
+
+/* Now to add some Media Queries */
+
+
+@media (max-width: 800px) {
+    * {border: 1px solid orange;
+}
+}
+
+@media (max-width: 500px) {
+    * { border: 1px solid blue;
+}
 }
